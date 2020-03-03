@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.jpg" type="image/jpg">
+	<title>SCIS,UOH</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#SearchButton{
+				display: inline-block;
+				padding: 8px 10px;
+				width: 120px;
+				font-size: 20px;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				outline: none;
+				color: #fff;
+				background-color: #4CAF50;
+				border: none;
+				border-radius: 8px;
+				box-shadow: 0 3px #999;
+			}
+			#SearchButton:hover {background-color: #3e8e41}
+			#SearchButton:active {
+				background-color: #3e8e41;
+				box-shadow: 0 3px #666;
+				transform: translateY(4px);
+			}
+	</style>
+	<script type="text/javascript">
+    	function blockSpecialChar(e){
+        	var k;
+        	document.all ? k = e.keyCode : k = e.which;
+        	return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32 || (k >= 48 && k <= 57));
+        }
+	</script>	
+</head>
+
+<body onload="hideSearchBox()">
+
+	<!--================ Start Header Menu Area =================-->
+	  <div id="header">
+        <table style="width: 100%; background-color:#f48942;">
+            <tr>  
+                 <td>
+                     <img src="image/logo.png" style="width: 120px"/>
+                 </td>
+                  <td style="font style:calibri; color:red; "><h3><br/></h3>
+					<h1>University of Hyderabad</h1>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<header class="header_area">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
+						<a href="tel:+9530123654896">
+							<span class="lnr lnr-phone"></span>
+							<span class="text">
+								<span class="text">91-040-23134101</span>
+							</span>
+						</a>
+						<a href="mailto:support@colorlib.com">
+							<span class="lnr lnr-envelope"></span>
+							<span class="text">
+								<span class="text">deanscis@uohyd.ac.in</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+						<a href="login.html" class="text-uppercase">Login</a>
+						<a href="signup.html" class="text-uppercase">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between" method="" action="">
+						<input type="text" class="form-control" id="search_input" placeholder="Search Here">
+						<button type="submit" class="btn"></button>
+						<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+					</form>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Academics</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+									<li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+									<li class="nav-item"><a class="nav-link" href="syllabus.html">Syllabus</a></li>
+								</ul>
+							</li>
+							
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Research</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="research.html">Research Area</a></li>
+									<li class="nav-item"><a class="nav-link" href="project.html">Funded Project</a></li>
+									<li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
+							        <li class="nav-item"><a class="nav-link" href="linkage.html">Linkage</a></li>
+								</ul>
+							</li>
+							
+							<li class="nav-item submenu dropdown">
+							
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">People</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+									<li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+									<li class="nav-item"><a class="nav-link" href="visitor.html">Visitors</a></li>
+								</ul>
+								</li>
+								<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Courses</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="Phd.html">Ph.D</a></li>
+									<li class="nav-item"><a class="nav-link" href="mtech.html">M.Tech</a></li>
+									<li class="nav-item"><a class="nav-link" href="imtech.html">IM.Tech</a></li>
+								</ul>
+							</li>
+							<!--<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>-->
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item">
+								<a href="#" class="nav-link search" id="search">
+									<i class="lnr lnr-magnifier"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ Start Admission Area =================-->
+    
+	<div id="site_content">
+       <div class="row"> 
+        <div class="col-lg-2 col-md-2">  <!--class="Left_content" -->
+          <div class="rectangle"><h2 style="background-color:#ffffff;">Admission</h2></div>
+             <div class="triangle-l"></div>
+                <div class="triangle-r"></div>
+           <div class="info" style="color:#f442ad; background-color:#ffffff; ">
+           <div id ="left_wrap" >
+             <nav>
+                    <ul id ="left_menu">
+						
+						
+						
+                        <li><a href="phd.html">Ph.D</a></li>
+                        <li><a href="imtech.html">Integrated M.Tech</a></li>
+                        <li><a href="mtechcs_program.html" class="trans_current">M.Tech CS</a></li>
+                        <li><a href="mtechai_program.html">M.Tech AI</a></li>
+                        <li><a href="mtechit_program.html">M.Tech IT</a></li>
+			            <li><a href="mca_program.html">MCA</a></li>
+						<li><a href="detail.php">Apply Now<img src="Images/link.png" alt="Apply Now" style="width:42px;height:42px;border:0"></a></li>
+						<li><form action="viewdetails.php" method="POST">View Status<input type="text" name="appNo" id="appNoid" placeholder="Application Number" onkeypress="return blockSpecialChar(event)"/><br>
+						<input type="submit" name="sbt" id="SearchButton"  value="Search"></form></li>
+						 
+                  <!--   <li onclick="function1(1)">Ph.D</li>
+                         <li onclick="function1(2)">Integrated M.Tech</li>
+                         <li onclick="function1(3)">M.Tech CS</li>
+                         <li onclick="function1(4)">M.Tech AI</li>
+                         <li onclick="function1(5)">M.Tech IT</li>
+			             <li onclick="function1(6)">MCA</li>
+			  -->
+			    
+                     </ul>
+              </nav>
+    		</div>
+            </div>
+	   </div><!--About us end-->
+       
+       <div class="col-lg-8 col-md-16">
+       
+           <div class="info" > <!--bullet -->
+           
+            <div id ="page-wrap">
+            <section id="main-content">
+				<div id="guts" style="background-color:#ffffff;">
+		<!--Enter Your Content Here--></br>
+<li><a style="color:red;">Disclaimer:</a> <a style="color:black;">While every attempt is made to keep this page up-to-date, please refer to the latest University prospectus (available at http://acad.uohyd.ac.in) for up-to-date-information. In case of any conflict, the information provided in the prospectus shall be considered as authentic</a></li>
+<li><a style="color:red;">Note:</a> <a style="color:black;"> Foreign nationals are also advised to read section on Admission of Foreign Nationals in the University prospectus</a></li>          
+	<p style="color:#d9d9d9;">The following is the summary of the criteria for admission into the various programmes:</p>		
+	<li><a style="color:black;"> Ph.D. admission is through an entrance exam followed by an interview. Please refer to appropriate section in the University prospectus about UGC Regulations 2016 also</a></li>		
+	<li><a style="color:black;">The admission to 5-year Integrated M.Tech. in Computer Science will be done through JEE(Main) examination conducted in 2018 and the counselling for admission will be done by Joint Seat Allocation Authority (JOSAA)/Central Seat Allocation Board (CSAB).</a></li>	
+	<li><a style="color:black;">Admission to M.Tech programmes in Computer Science, Artificial Intelligence and Information Technology courses is through centralized counselling by CCMT (ccmt.nic.in) and is based on valid GATE scores in Computer Science and Information Technology only.</a></li>	
+	<li><a style="color:black;">MCA admissions are done based on the scores obtained in NIMCET (National Institute of Technology Master of Computer Applications Common Entrance Test) 2018 only. NIMCET 2018 scores, in order of merit, will be the basis for admission which is done by the counselling at the University of Hyderabad. Interested candidates need to apply to the University of Hyderabad and separately need to provide their NIMCET 2018 scores (when available) as per the information provided by Controller of Examination, University of Hyderabad.</a></li>	
+	<p style="color:black;">For further details on the admission to a specific programme and for Foreign Candidates, please refer to the corresponding programme page. For schedule of entrance examination and admission, please refer to latest University Prospectus</p>
+	<h1>Fee Structure :</h1>
+	<table id="academia" align="center" >
+    <tr class="td_coursetable">
+ 	 
+ 		
+ 		<th style="color:#bfbfbf ; width=11%;"><strong> Course Name</strong></th>
+		<th style="color:#bfbfbf ; width=11%;"><strong> Admission Fee</strong></th>
+ 		<th style="color:#bfbfbf ; width=11%;"> <strong> Fee at the time of Admission</strong></th>
+        <th style="color:#bfbfbf ; width=11%;"> <strong> Fees per Sem</strong></th>
+ 		<th style="color:#bfbfbf ; width=11%;"><strong>Tution Fee</strong></th>
+        <th style="color:#bfbfbf ; width=11%;"> <strong>Miscellaneous  Fee</strong></th>
+ 		<th style="color:#bfbfbf ; width=11%;"><strong> Deposits Refundable</strong></th>
+		<th style="color:#bfbfbf ; width=11%;"> <strong>Grand Total</strong></th>
+	 </tr>
+ 
+ 	<tr>
+ 		
+        <td>Ph.D. </td>
+        <td>320</td>
+        <td>330</td>
+        <td>---</td>
+        <td>1090</td>
+        <td>3630</td>
+        <td>1750</td>
+        <td>7120</td>
+     </tr>
+     
+      <tr>
+     	
+        <td>5-yr Int. M.Tech(CS)</td>
+        <td>320</td>
+        <td>330+19000</td>
+        <td>---</td>
+        <td>10465</td>
+        <td>5905</td>
+        <td>1750</td>
+        <td>37770</td>
+      </tr>
+     <tr>
+     	
+        <td>M.Tech (CS/AI/IT)</td>
+        <td>320</td>
+        <td>330+19000</td>
+        <td>---</td>
+        <td>10465</td>
+        <td>5905</td>
+        <td>1750</td>
+        <td>37770</td>
+      </tr>
+      <tr>
+     	 
+         <td>M C A </td>
+         <td>320</td>
+         <td>330+19000</td>
+         <td>---</td>
+         <td>10540</td>
+         <td>5685</td>
+         <td>1755</td>
+         <td>37630</td>
+                
+ </table>
+ <p><a style="color:#bfbfbf;">Fee Payable by the Foreign Nationals/ NRI Students :</a> 1400$ per semester(Ph.D., M.Tech (CS/AI/IT), MCA & 5-yr Int. M.Tech(CS))</p>
+ <p>Mess Deposit to be paid at the time of Hostel Admission:</p>
+<table id="academia" align="center" >
+    <tr class="td_coursetable">
+ 		<th style="color:#bfbfbf ; width=11%;"> Particulars</th>
+        <th style="color:#bfbfbf ; width=11%;"> General Category</th>
+        <th style="color:#bfbfbf ; width=11%;"> SC/ST Sholarship holders</th>
+       
+     </tr>
+     <tr>
+     	<td> Mess Deposit for 5-Year Integrated courses </td>
+	     <td>5000*</td>
+    	 <td>1500</td>
+      </tr>
+      <tr>
+     	<td> Mess Deposit for all other courses </td>
+	     <td>2500</td>
+    	 <td>1500</td>
+      </tr>
+      <tr>
+      <td> Room Rent (Per Semster)</td>
+      <td> 500  </td>
+      <td> Nil</td>
+      </tr>
+     <tr>
+     <td> Crockery Fees (Per Year) </td>
+     <td>250</td>
+     <td>250</td>
+     </tr>
+     <tr>
+     <td> Hostel Caution Money Deposit (Refundable except service charge 200/-)</td>
+     <td> 600</td>
+     <td> 400</td>
+     </tr>
+     </table>
+  <p><font color="#b20c22"><b> * To be collected in two installments @ 2500/- at the time of admission and Rs.2500/- at the beginning
+of their 3rd year of study.</b></font><br/></p>
+	</div>
+			<!-- guts end here-->
+			</section>
+	  		 </div> <!--Page Wrap End HEre-->		
+               </div>
+  </div>
+  </div>
+   </div><!--site Content end-->
+ 
+    <!--================ End Admission Area =================-->
+	<!--================ Start footer Area  =================-->
+	<footer class="footer-area section_gap" >
+		<div class="container" >
+			
+			<div class="row footer-bottom d-flex justify-content-between" >
+				<!--<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2019 All rights reserved | This template is
+					made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">18MCMT35</a></p>
+				<div class="col-lg-4 col-sm-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
+				</div>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white" style="align:center;">"Copyright &copy; 2019 SCIS, University of Hyderabad " <br>
+               <a href="./"> <font size="3px" color="#35BDF5">Home</font></a>&nbsp;&nbsp;
+  <a href="https://www.uohyd.ac.in/"><font size="3px" color="#35BDF5">UOH</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  "Developed by: Rakesh Kumar"</p>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
